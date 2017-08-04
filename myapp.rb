@@ -12,13 +12,15 @@ class RodaApp < Roda
       view("index")
     end
 
-    r.get "saiba-mais/condutor" do
-      view("#{@more}/drivers_info")
+    r.on "saiba-mais" do      
+      r.is "condutor" do
+        view("#{@more}/drivers_info")
+      end
+      r.is "proprietario" do
+        view("#{@more}/owner_info")
+      end
     end
-
-    r.get "saiba-mais/proprietario" do
-      view("#{@more}/owner_info")
-    end
-
+    
   end
+
 end
