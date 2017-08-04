@@ -1,0 +1,14 @@
+.logo-peg {
+	background-image: url(/images/logo.png);
+  width: 181px;
+  height: 29px;
+}
+.owner-banner {
+	background-image: url(/images/owner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+  display: block;
+  height: 400px;
+}
+

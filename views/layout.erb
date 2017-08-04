@@ -7,6 +7,7 @@
 
 		<title>My Application</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/application.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	</head>
@@ -14,12 +15,16 @@
 		<nav class="navbar navbar-default">	  
 	    <div class="navbar-header">
 	      <a class="navbar-brand" href="/">
-	      <div class="logo"></div>
-	      	PegCar
-	      </a>
+	      	<div class="logo-peg"></div>
+	      </a>	      
 	    </div>
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="/">Início<span class="sr-only">(current)</span></a></li>
+	      </ul>
+		 	</div>
 		</nav>
-		<div class="container-fluid">
+		<div class="container">
 			<%= yield %>
 		 </div>
 	</body>
