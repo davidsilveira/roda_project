@@ -1,3 +1,3 @@
- 
-require File.expand_path("../myapp",  __FILE__)
+
+require File.expand_path("../lib/roda_app",  __FILE__)
 run RodaApp.app
